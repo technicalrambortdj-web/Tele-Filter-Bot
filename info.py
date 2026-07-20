@@ -17,9 +17,9 @@ def is_enabled(value, default):
 
 # ─── Bot Info ───────────────────────────────────────────
 SESSION = environ.get('SESSION', 'Tele_Filter')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '31272017'))
+API_HASH = environ.get('API_HASH', 'cbd904455281007f15e9cbe6e1e85fc4')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8842399883:AAH2lpO69N8NjFZTAO5j6fc4uddhxgiXshY")
 
 
 # ─── Bot Settings ───────────────────────────────────────
@@ -39,8 +39,8 @@ VRFY_IMG = environ.get("VRFY_IMG", "https://envs.sh/R3N.jpg")
 
 
 # ─── Admins / Users / Channels ──────────────────────────
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8446658533').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1004411283711').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '0').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -58,7 +58,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 
 # ─── MongoDB ─────────────────────────────────────────────
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://technicalrambortdj_db_user:zTEMkMjbsD1sYzdh@cluster0.qgfypes.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telefilter')
 
@@ -84,7 +84,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 𓆩•�
 
 
 # ─── Display Configurations ─────────────────────────────
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ""))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1004355001178"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kissuhelp')
 
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
